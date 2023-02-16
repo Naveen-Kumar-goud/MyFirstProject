@@ -30,9 +30,10 @@ jobs:
           path: '**/obj/Release/Package/**'
      
    deploy-mycode:
+      needs: firstjob
       runs-on: windows-2019
       environment:
-        name: "prod"
+        name: "Prod"
       steps:
        - name: deploy my application
          uses: Azure/webapps-deploy@v2.2.4
