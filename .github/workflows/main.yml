@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 env:
-  workflow_variable_1 : workflow1
+  workflow_variable_1 : workflow
   
 jobs:
   variable_job:
