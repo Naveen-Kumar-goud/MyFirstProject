@@ -16,3 +16,7 @@ jobs:
       env: 
         steps_variable: stepvariable1
       run : echo "$job_variable_1 $steps_variable $workflow_variable_1"
+    - name: "step2"
+      env:
+        steps1_variable: stepvariable1
+      run : echo ${{steps1_variable1}}
