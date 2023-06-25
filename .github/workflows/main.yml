@@ -19,4 +19,4 @@ jobs:
     - name: "step2"
       env:
         steps1_variable1: stepvariable1
-      run : echo $steps1_variable1
+      run : echo ${{steps1_variable1}}
